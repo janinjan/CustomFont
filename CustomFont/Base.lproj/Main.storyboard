@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MFZhiHei_Noncommercial-Regular.ttf">
+            <string>MFZhiHei_Noncommercial-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomFont" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVs-tX-gBk">
+                                <rect key="frame" x="20" y="84" width="374" height="399"/>
+                                <string key="text">30 Days of Swift
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nec augue quis commodo. Proin eget cursus ante, sit amet porttitor urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac felis id augue tristique aliquet.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nec augue quis commodo. Proin eget cursus ante, sit amet porttitor urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac felis id augue tristique aliquet.</string>
+                                <fontDescription key="fontDescription" name="MFZhiHei_Noncommercial-Regular" family="MF ZhiHei (Noncommercial)" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuu-2l-PBr">
+                                <rect key="frame" x="132" y="672" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.88312941789627075" green="0.90122193098068237" blue="0.036005701869726181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vuu-2l-PBr" secondAttribute="height" multiplier="1:1" id="QOy-xP-X4c"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="uQl-mH-J72"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Change Font">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELX-Lp-b8o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VVs-tX-gBk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TRl-Xn-7Ll"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VVs-tX-gBk" secondAttribute="trailing" constant="20" id="b1M-ck-BGs"/>
+                            <constraint firstItem="Vuu-2l-PBr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gnQ-M3-g2s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vuu-2l-PBr" secondAttribute="bottom" constant="40" id="lgy-Ne-zYY"/>
+                            <constraint firstItem="VVs-tX-gBk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ugR-ux-JTX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeButton" destination="Vuu-2l-PBr" id="uZh-b7-yVF"/>
+                        <outlet property="label" destination="VVs-tX-gBk" id="BcZ-WB-lYb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
