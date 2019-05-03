@@ -15,10 +15,16 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     var fontFamily = ["MFJinHei_Noncommercial-Regular", "MFTongXin_Noncommercial-Regular", "MFZhiHei_Noncommercial-Regular", "Gaspar"]
+    var fontIndex = 0
     
     // MARK: - Actions
     @IBAction func changeFont(_ sender: UIButton) {
-        label.font = UIFont(name: "MFTongXin_Noncommercial-Regular", size: 21)
+        label.font = UIFont(name: fontFamily[fontIndex], size: 21)
+        if fontIndex < fontFamily.count - 1 {
+            fontIndex += 1
+        } else {
+            fontIndex = 0
+        }
     }
     
     // MARK: - Methods
